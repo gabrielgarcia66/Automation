@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="APITestSuite" verbose="1" parallel="tests" thread-count="1" preserve-order="true">
+    <test name="BTXDAT-1234-ApiValidationsToCheckValuesExist" preserve-order="true">
+
+        <classes>
+            <class name="tests.api.APITests">
+                <methods>
+                    <include name="apiValidationsToCheckValuesExist" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
