@@ -39,8 +39,6 @@ public class BrowserDriver {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setBrowserName("chrome");
-		capabilities.setPlatform(Platform.WINDOWS);
-		chromeOptions.setAcceptInsecureCerts(true);
 		chromeOptions.addArguments("--window-size=1440, 900");
 		chromeOptions.addArguments("--start-maximized");
 		chromeOptions.addArguments("--lang=en_US");
